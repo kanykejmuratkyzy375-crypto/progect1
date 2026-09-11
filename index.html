@@ -75,6 +75,7 @@
     <button onclick="showMessage()">
         Explore Earth
     </button>
+    <div id="result"></div>
 </header>
 
 <section>
@@ -89,8 +90,9 @@
 
 <script>
     function showMessage() {
-        alert("Welcome to Earth Explorer!");
-    }
+    document.getElementById("result").innerHTML =
+        "🌍 Welcome to Earth Explorer!";
+}
 </script>
 
 </body>
