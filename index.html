@@ -75,6 +75,10 @@
     <button onclick="showMessage()">
         Explore Earth
     </button>
+    <input id="place" type="text"
+    placeholder="Enter a place">
+    <button onclick="findPlace()">Find</button>
+    
     <div id="result"></div>
 </header>
 
@@ -92,6 +96,12 @@
     function showMessage() {
     document.getElementById("result").innerHTML =
         "🌍 Welcome to Earth Explorer!";
+}
+    function findPlace() {
+    let place = document.getElementById("place").value;
+
+    document.getElementById("result").innerHTML =
+        "You selected: " + place;
 }
 </script>
 
