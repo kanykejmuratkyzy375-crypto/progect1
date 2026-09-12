@@ -94,9 +94,9 @@
 <script>
     
    function findPlace() {
-    let place = document.getElementById("place").value;
+    let place = document.getElementById("place").value.trim().toLowerCase();
 
-    if (place === "Bishkek") {
+    if (place === "bishkek") {
         document.getElementById("result").innerHTML =
             "You selected Bishkek 🇰🇬";
     } else {
