@@ -96,11 +96,16 @@
     document.getElementById("result").innerHTML =
         "🌍 Welcome to Earth Explorer!";
 }
-    function findPlace() {
+   function findPlace() {
     let place = document.getElementById("place").value;
 
-    document.getElementById("result").innerHTML =
-        "You selected: " + place;
+    if (place === "Bishkek") {
+        document.getElementById("result").innerHTML =
+            "You selected Bishkek 🇰🇬";
+    } else {
+        document.getElementById("result").innerHTML =
+            "Place not found";
+    }
 }
 </script>
 
